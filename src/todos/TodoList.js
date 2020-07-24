@@ -4,6 +4,7 @@ import NewTodoForm from './NewTodoForm';
 import TodoListItem from './TodoListItem';
 import { removeTodo, markTodoAsCompleted } from './actions';
 
+
 import './TodoList.css';
 
 const TodoList = ({ todos = [ ], onRemovePressed, onCompletedPressed }) => (
@@ -24,7 +25,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
     onRemovePressed: text => dispatch(removeTodo(text)),
-    onCompletedPressed: text => dispatch(markTodoAsCompleted(text)),
+    onCompletedPressed: text => dispatch(markTodoAsCompleted(text)),    
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
