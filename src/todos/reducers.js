@@ -20,9 +20,8 @@ export const todos = (state = [], action) => {
         case MARK_TODO_AS_COMPLETED: {
             const { text } = payload;
             return state.map(todo => {
-                const flag = todo.isCompleted;
                 if(todo.text === text) {
-                    return { ...todo, isCompleted: !flag}
+                    return { ...todo, isCompleted: !todo.isCompleted}
                 }
                 return todo;
             });
