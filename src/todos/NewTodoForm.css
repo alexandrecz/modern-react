@@ -16,13 +16,23 @@
 }
 
 .new-todo-button {
-    font-size: 16px;
-    padding: 8px;
-    border: none;
-    border-radius: 8px;
-    outline: none;
     cursor: pointer;
-    margin-left: 8px;
-    width: 20%;
-    background-color: #22ee22;
+    outline: none;
+    margin-left: 26px;
+    display:inline-block;
+    padding: 8px;
+    border-radius:8px;   
+    height:60px;
+    border:none;
+    background-color:#2e7cf1;
+    color:white;
+    font-size:16px;    
+    transition: .5s ease-in;   
+}
+
+.new-todo-button:hover{
+    box-shadow:0 14px 6px 0 rgba(93,93,93,.25), 0 1px 3px 0 rgba(0,0,0,.15);
+    background-color:#1e55a7;
+    transform:translateY(-4px);
+    transition:opacity 1s cubic-bezier(.645,.045,.355,1),-webkit-transform .8s cubic-bezier(.645,.045,.355,1);
 }
