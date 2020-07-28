@@ -1,4 +1,4 @@
-A CRUD App using Redux.
+A CRUD App using Redux and Thunk middleware.
 
 ![alt text](https://github.com/alexandrecz/modern-react/blob/master/img/app.png)
 
